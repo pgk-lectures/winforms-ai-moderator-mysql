@@ -511,10 +511,12 @@ LoginForm.cs
 | Text | Вход — AI-модератор | Заголовок окна |
 | ClientSize | 520, 560 | Размер рабочей области |
 | StartPosition | CenterScreen | Открывает окно по центру |
-| BackColor | 11, 16, 32 | Тёмный фон |
+| BackColor | 11; 16; 32 | Тёмный фон |
 | FormBorderStyle | FixedSingle | Запрещает менять размер |
 | MaximizeBox | False | Убирает кнопку разворачивания |
 | Font | Segoe UI, 10pt | Основной шрифт |
+
+Цвета в свойствах BackColor, ForeColor и других цветовых свойствах вводите через точку с запятой, например `17; 24; 43`. Для Location, Size и ClientSize оставляйте запятую, например `520, 560`.
 
 ## Шаг 19. Добавьте панель авторизации
 
@@ -525,7 +527,7 @@ LoginForm.cs
 | (Name) | pnlLogin | Имя основной панели |
 | Location | 40, 40 | Отступ от краёв формы |
 | Size | 440, 480 | Размер области входа |
-| BackColor | 17, 24, 43 | Цвет рабочей области |
+| BackColor | 17; 24; 43 | Цвет рабочей области |
 
 Следующие элементы помещайте внутрь pnlLogin.
 
@@ -550,7 +552,7 @@ LoginForm.cs
 | Location | 112, 42 | Расположение справа от логотипа |
 | AutoSize | True | Подбирает размер под текст |
 | Font | Segoe UI, 19pt, Bold | Выделяет название |
-| ForeColor | 247, 248, 252 | Светлый текст |
+| ForeColor | 247; 248; 252 | Светлый текст |
 | BackColor | Transparent | Показывает фон панели |
 
 Добавьте второй Label:
@@ -562,7 +564,7 @@ LoginForm.cs
 | Location | 112, 78 | Расположение под названием |
 | AutoSize | True | Подбирает размер |
 | Font | Segoe UI, 10pt | Размер подзаголовка |
-| ForeColor | 142, 154, 184 | Приглушённый цвет |
+| ForeColor | 142; 154; 184 | Приглушённый цвет |
 
 ## Шаг 21. Добавьте поле логина
 
@@ -575,7 +577,7 @@ LoginForm.cs
 | Location | 48, 142 | Расположение подписи |
 | AutoSize | True | Подбирает размер |
 | Font | Segoe UI, 11pt, Bold | Выделяет подпись |
-| ForeColor | 221, 227, 242 | Светлый текст |
+| ForeColor | 221; 227; 242 | Светлый текст |
 
 Под ним добавьте TextBox:
 
@@ -585,8 +587,8 @@ LoginForm.cs
 | Location | 48, 168 | Расположение поля |
 | Size | 344, 34 | Размер поля |
 | Font | Segoe UI, 12pt | Размер вводимого текста |
-| BackColor | 11, 16, 32 | Тёмный фон |
-| ForeColor | 221, 227, 242 | Светлый текст |
+| BackColor | 11; 16; 32 | Тёмный фон |
+| ForeColor | 221; 227; 242 | Светлый текст |
 | MaxLength | 50 | Ограничивает длину логина |
 
 ## Шаг 22. Добавьте поле пароля
@@ -600,7 +602,7 @@ LoginForm.cs
 | Location | 48, 230 | Расположение подписи |
 | AutoSize | True | Подбирает размер |
 | Font | Segoe UI, 11pt, Bold | Выделяет подпись |
-| ForeColor | 221, 227, 242 | Светлый текст |
+| ForeColor | 221; 227; 242 | Светлый текст |
 
 Добавьте TextBox:
 
@@ -610,8 +612,8 @@ LoginForm.cs
 | Location | 48, 256 | Расположение поля |
 | Size | 344, 34 | Размер поля |
 | Font | Segoe UI, 12pt | Размер текста |
-| BackColor | 11, 16, 32 | Тёмный фон |
-| ForeColor | 221, 227, 242 | Светлый текст |
+| BackColor | 11; 16; 32 | Тёмный фон |
+| ForeColor | 221; 227; 242 | Светлый текст |
 | MaxLength | 50 | Ограничивает длину |
 | UseSystemPasswordChar | True | Скрывает введённые символы |
 
@@ -625,7 +627,7 @@ LoginForm.cs
 | Text | Войти | Текст на кнопке |
 | Location | 48, 326 | Расположение кнопки |
 | Size | 344, 52 | Размер кнопки |
-| BackColor | 124, 92, 252 | Фиолетовый фон |
+| BackColor | 124; 92; 252 | Фиолетовый фон |
 | ForeColor | White | Белый текст |
 | Font | Segoe UI, 12pt, Bold | Выделяет надпись |
 | FlatStyle | Flat | Плоский стиль |
@@ -651,7 +653,7 @@ LoginForm.cs
 | Size | 344, 24 | Область сообщения |
 | AutoSize | False | Сохраняет заданный размер |
 | TextAlign | MiddleCenter | Выравнивает текст по центру |
-| ForeColor | 239, 123, 138 | Красный цвет |
+| ForeColor | 239; 123; 138 | Красный цвет |
 | Visible | False | Скрывает ошибку до неудачного входа |
 
 ## Шаг 25. Напишите обработчик входа
@@ -776,7 +778,7 @@ Application.Run(new LoginForm());
 | Size | 250, 24 | Место для логина |
 | AutoSize | False | Сохраняет размер |
 | TextAlign | MiddleRight | Прижимает текст вправо |
-| ForeColor | 142, 154, 184 | Приглушённый цвет |
+| ForeColor | 142; 154; 184 | Приглушённый цвет |
 | BackColor | Transparent | Показывает фон панели |
 
 В конструкторе Form1 после InitializeComponent добавьте:
@@ -796,8 +798,8 @@ lblCurrentUser.Text = "Пользователь: " + Session.Login;
 | Text | История | Текст на кнопке |
 | Location | 448, 366 | Расположение рядом с «Очистить» |
 | Size | 150, 54 | Размер кнопки |
-| BackColor | 25, 34, 56 | Тёмный фон |
-| ForeColor | 198, 206, 224 | Светлый текст |
+| BackColor | 25; 34; 56 | Тёмный фон |
+| ForeColor | 198; 206; 224 | Светлый текст |
 | Font | Segoe UI, 12pt, Bold | Размер надписи |
 | FlatStyle | Flat | Плоский стиль |
 | Cursor | Hand | Курсор-рука |
@@ -807,7 +809,7 @@ lblCurrentUser.Text = "Пользователь: " + Session.Login;
 | Свойство | Значение | Для чего нужно |
 | --- | --- | --- |
 | BorderSize | 1 | Тонкая рамка |
-| BorderColor | 53, 65, 95 | Цвет рамки |
+| BorderColor | 53; 65; 95 | Цвет рамки |
 
 ## Шаг 30. Подготовьте процент до отображения
 
@@ -961,7 +963,7 @@ btnHistory → Click → btnHistory_Click
 | Text | История проверок | Заголовок окна |
 | ClientSize | 1100, 700 | Размер рабочей области |
 | StartPosition | CenterParent | Открывает окно над Form1 |
-| BackColor | 11, 16, 32 | Тёмный фон |
+| BackColor | 11; 16; 32 | Тёмный фон |
 | FormBorderStyle | FixedSingle | Запрещает менять размер |
 | MaximizeBox | False | Убирает разворачивание |
 | Font | Segoe UI, 10pt | Основной шрифт |
@@ -973,7 +975,7 @@ btnHistory → Click → btnHistory_Click
 | (Name) | pnlMain | Основная область формы |
 | Location | 32, 32 | Отступ от краёв |
 | Size | 1036, 636 | Размер панели |
-| BackColor | 17, 24, 43 | Цвет рабочей области |
+| BackColor | 17; 24; 43 | Цвет рабочей области |
 
 ## Шаг 36. Добавьте заголовок истории
 
@@ -986,7 +988,7 @@ btnHistory → Click → btnHistory_Click
 | Location | 36, 28 | Расположение |
 | AutoSize | True | Подбирает размер |
 | Font | Segoe UI, 20pt, Bold | Крупный заголовок |
-| ForeColor | 247, 248, 252 | Светлый текст |
+| ForeColor | 247; 248; 252 | Светлый текст |
 
 Добавьте второй Label:
 
@@ -996,7 +998,7 @@ btnHistory → Click → btnHistory_Click
 | Text | Пользователь: student | Пример текста |
 | Location | 36, 68 | Расположение |
 | AutoSize | True | Подбирает размер |
-| ForeColor | 142, 154, 184 | Приглушённый текст |
+| ForeColor | 142; 154; 184 | Приглушённый текст |
 
 ## Шаг 37. Добавьте DataGridView
 
@@ -1018,7 +1020,7 @@ btnHistory → Click → btnHistory_Click
 | SelectionMode | FullRowSelect | Выделяет строку целиком |
 | AutoSizeColumnsMode | Fill | Растягивает колонки на всю ширину |
 | RowHeadersVisible | False | Убирает служебную левую колонку |
-| BackgroundColor | 248, 250, 252 | Светлый фон таблицы |
+| BackgroundColor | 248; 250; 252 | Светлый фон таблицы |
 
 Колонки вручную создавать не нужно. Они появятся из DataTable.
 
@@ -1046,10 +1048,10 @@ btnHistory → Click → btnHistory_Click
 
 | Кнопка | BackColor | Назначение цвета |
 | --- | --- | --- |
-| btnRefresh | 124, 92, 252 | Основное действие |
-| btnDeleteSelected | 166, 58, 74 | Удаление записи |
-| btnDeleteAll | 93, 40, 50 | Опасное массовое удаление |
-| btnClose | 25, 34, 56 | Нейтральное действие |
+| btnRefresh | 124; 92; 252 | Основное действие |
+| btnDeleteSelected | 166; 58; 74 | Удаление записи |
+| btnDeleteAll | 93; 40; 50 | Опасное массовое удаление |
+| btnClose | 25; 34; 56 | Нейтральное действие |
 
 ## Шаг 39. Загрузите историю
 
