@@ -1,0 +1,17 @@
+<svg width="1000" height="700" viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="700" fill="#0B1020"/>
+  <rect x="270" y="105" width="460" height="490" rx="18" fill="#11182B" stroke="#26304A" stroke-width="2"/>
+  <rect x="318" y="153" width="48" height="48" rx="14" fill="#7C5CFC"/>
+  <path d="M333 178L341 186L354 169" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="382" y="174" fill="#F7F8FC" font-family="Arial" font-size="26" font-weight="700">Вход в систему</text>
+  <text x="382" y="198" fill="#8E9AB8" font-family="Arial" font-size="14">AI-модератор сообщений</text>
+  <text x="318" y="254" fill="#DDE3F2" font-family="Arial" font-size="15" font-weight="700">Логин</text>
+  <rect x="318" y="270" width="364" height="50" rx="8" fill="#0B1020" stroke="#35415F" stroke-width="2"/>
+  <text x="336" y="301" fill="#687491" font-family="Arial" font-size="15">Введите логин</text>
+  <text x="318" y="360" fill="#DDE3F2" font-family="Arial" font-size="15" font-weight="700">Пароль</text>
+  <rect x="318" y="376" width="364" height="50" rx="8" fill="#0B1020" stroke="#35415F" stroke-width="2"/>
+  <text x="336" y="407" fill="#687491" font-family="Arial" font-size="20">••••••••</text>
+  <rect x="318" y="468" width="364" height="54" rx="9" fill="#7C5CFC"/>
+  <text x="500" y="502" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="17" font-weight="700">Войти</text>
+  <text x="500" y="556" text-anchor="middle" fill="#EF7B8A" font-family="Arial" font-size="14">Неверный логин или пароль</text>
+</svg>
